@@ -327,7 +327,7 @@
     .forest-material {
       background:
         linear-gradient(rgba(15,23,42,0.15), rgba(15,23,42,0.45)),
-        url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1200&auto=format&fit=crop');
+        url('img/ogni.jpg');
       background-size: cover;
       background-position: center;
     }
@@ -335,7 +335,7 @@
     .ocean-material {
       background:
         linear-gradient(rgba(15,23,42,0.15), rgba(15,23,42,0.45)),
-        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop');
+        url('img/voda.jpg');
       background-size: cover;
       background-position: center;
     }
@@ -568,24 +568,25 @@
       grid-column: 1 / -1;
     }
 
-    .research-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 22px;
-      margin-top: 28px;
-      margin-bottom: 34px;
-    }
+.research-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+  margin-bottom: 34px;
+}
 
-    .research-image {
-      width: calc(33.333% - 15px);
-      min-width: 240px;
-    }
-
-    .research-image:nth-child(4),
-    .research-image:nth-child(5) {
-      width: calc(33.333% - 15px);
-    }
+.research-image {
+  width: 100%;
+  min-height: 260px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.12);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.18);
+  transition: 0.3s ease;
+}
 
     .research-image {
       min-height: 260px;
@@ -606,7 +607,7 @@
     .research-1 {
       background:
         linear-gradient(rgba(15,23,42,0.18), rgba(15,23,42,0.45)),
-        url('img/');
+        url('img/photo_2026-05-20_13-20-57.jpg');
       background-size: cover;
       background-position: center;
     }
@@ -920,33 +921,34 @@
         <div class="material-row reverse">
 
           <div class="material-text">
-            <h3>Скоро будет</h3>
+            <h3>Музей истории городского освещения "Огни Москвы"</h3>
 
             <p>
-              Скоро будет
+              
+Музей, рассказывающий об истории освещения Москвы от старинных фонарей до современных ламп. Здесь можно увидеть редкие экспонаты и узнать, как менялся облик города с наступлением темноты.
             </p>
 
-            <a href="#" class="presentation-link">
+            <a href="https://disk.yandex.ru/i/k8zDp8po7lAqsQ" class="presentation-link">
               Открыть презентацию →
             </a>
           </div>
 
-          <a href="#" class="material-image forest-material"></a>
+          <a href="https://disk.yandex.ru/i/k8zDp8po7lAqsQ" class="material-image forest-material"></a>
 
         </div>
 
         <div class="material-row">
 
-          <a href="#" class="material-image ocean-material"></a>
+          <a href="https://disk.yandex.ru/i/adMW2j92GISygA" class="material-image ocean-material"></a>
 
           <div class="material-text">
-            <h3>Скоро будет</h3>
+            <h3>Музей «Вселенная Воды»</h3>
 
             <p>
-              Скоро будет
+              Интерактивный музей в Санкт-Петербурге, посвящённый истории водоснабжения, свойствам воды и экологии.
             </p>
 
-            <a href="#" class="presentation-link">
+            <a href="https://disk.yandex.ru/i/adMW2j92GISygA" class="presentation-link">
               Открыть презентацию →
             </a>
           </div>
