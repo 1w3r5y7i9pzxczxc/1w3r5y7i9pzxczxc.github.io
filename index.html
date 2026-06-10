@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Личный сайт педагога</title>
+  <title>Путешествия по музеям</title>
 
   <style>
     * {
@@ -237,6 +236,16 @@
       border: 1px solid rgba(96,165,250,0.2);
     }
 
+.patriarsh-material {
+background:
+linear-gradient(rgba(15,23,42,0.15),
+rgba(15,23,42,0.45)),
+url('img/palati.jpg');
+
+background-size: cover;
+background-position: center;
+}
+
     .links-header {
       display: flex;
       justify-content: space-between;
@@ -277,14 +286,12 @@
       align-items: center;
       margin-top: 42px;
     }
-
-    .material-text h3 {
-      word-break: break-word;
+    .material-row > * {
+    min-width: 0;
     }
-
     .material-text h3 {
      word-break: break-word;
-    }    
+    }
 
     .material-image {
       display: block;
@@ -371,6 +378,24 @@
       font-weight: bold;
       transition: 0.25s ease;
     }
+
+    .presentation-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.presentation-links .presentation-link {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .presentation-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
     .presentation-link:hover {
       color: white;
@@ -850,20 +875,18 @@
       </div>
 
       <h1>
-        Виртуальные экскурсии как средство развития учебно-познавательного интереса младших школьников на уроках окружающего мира 
+        Путешествия по музеям 
       </h1>
 
       <p>
-        Данный сайт представляет результаты исследования, посвящённого использованию
-  виртуальных экскурсий на уроках окружающего мира в начальной школе.
-  Проект направлен на развитие учебно-познавательного интереса младших школьников на уроках окружающего мира.
+        Данный сайт представляет материалы проекта, посвящённого использованию виртуальных экскурсий на уроках окружающего мира в начальной школе. Проект направлен на развитие учебно-познавательного интереса младших школьников и расширение их представлений об окружающем мире посредством применения современных образовательных технологий.
       </p>
 
       <div class="about">
         <h2>О себе</h2>
 
         <p>
-          Я студентка колледжа МГПУ, обучаюсь  на специальности преподаватель начальных классов. За время учебной практики провела около 50 занятий, получив ценный опыт работы с детьми. На этом сайте собран комплекс виртуальных экскурсий, созданный для увлекательного и познавательного обучения младших школьников
+          Я студентка колледжа МГПУ, обучаюсь  на специальности преподаватель начальных классов. За время учебной практики провела около 50 занятий, получив ценный опыт работы с детьми. На этом сайте собраны материалы виртуальных экскурсий для организации увлекательного и познавательного обучения младших школьников.
         </p>
 
 
@@ -901,71 +924,157 @@
     </section>
     </section>
 
-    <section class="screen-section">
-      <section class="card links-screen">
+<section class="screen-section">
+  <section class="card links-screen">
 
-        <div class="links-header">
-          <h2>Разработанные виртуальные экскурсии</h2>
-          <div class="pulse"></div>
-        </div>
+<div class="links-header">
+  <h2>Разработанные виртуальные экскурсии</h2>
+  <div class="pulse"></div>
+</div>
 
-        <div class="material-row">
+<!-- Минералогический музей -->
 
-          <a href="https://disk.yandex.ru/i/IaSL_2eqfc83Yw" class="material-image museum-material" target="_blank"></a>
+<div class="material-row">
 
-          <div class="material-text">
-            <h3>Минералогический музей имени А. Е. Ферсмана</h3>
+  <a href="https://disk.yandex.ru/i/IaSL_2eqfc83Yw"
+     class="material-image museum-material"
+     target="_blank"></a>
 
-            <p>
-              Крупнейший в России музей минералов, расположенный в Москве. Он хранит более 150 тысяч экспонатов, включая природные кристаллы, драгоценные камни, метеориты и изделия из камня.
-            </p>
+  <div class="material-text">
+    <h3>Минералогический музей имени А. Е. Ферсмана</h3>
 
-            <a href="https://disk.yandex.ru/i/IaSL_2eqfc83Yw" class="presentation-link" target="_blank">
-              Открыть презентацию →
-            </a>
-          </div>
+    <p>
+      Крупнейший в России музей минералов, расположенный в Москве.
+      В музее представлены уникальные коллекции минералов,
+      драгоценных камней, метеоритов и изделий из камня.
+    </p>
 
-        </div>
+    <div class="presentation-links">
 
-        <div class="material-row reverse">
+      <a href="https://disk.yandex.ru/i/IaSL_2eqfc83Yw"
+         class="presentation-link"
+         target="_blank">
+        Открыть презентацию →
+      </a>
 
-          <div class="material-text">
-            <h3>Музей истории городского освещения "Огни Москвы"</h3>
+      <a href="https://disk.yandex.ru/i/Dixm3IdybVOMMg"
+         class="presentation-link"
+         target="_blank">
+        Открыть технокарту →
+      </a>
 
-            <p>
-              
-Музей, рассказывающий об истории освещения Москвы от старинных фонарей до современных ламп. Здесь можно увидеть редкие экспонаты и узнать, как менялся облик города с наступлением темноты.
-            </p>
+    </div>
+  </div>
 
-            <a href="https://disk.yandex.ru/i/k8zDp8po7lAqsQ" class="presentation-link">
-              Открыть презентацию →
-            </a>
-          </div>
+</div>
 
-          <a href="https://disk.yandex.ru/i/k8zDp8po7lAqsQ" class="material-image forest-material"></a>
+<!-- Огни Москвы -->
 
-        </div>
+<div class="material-row reverse">
 
-        <div class="material-row">
+  <div class="material-text">
+    <h3>Музей истории городского освещения «Огни Москвы»</h3>
 
-          <a href="https://disk.yandex.ru/i/adMW2j92GISygA" class="material-image ocean-material"></a>
+    <p>
+      Музей знакомит учащихся с историей освещения Москвы
+      от старинных масляных фонарей до современных технологий.
+    </p>
 
-          <div class="material-text">
-            <h3>Музей «Вселенная Воды»</h3>
+    <div class="presentation-links">
 
-            <p>
-              Интерактивный музей в Санкт-Петербурге, посвящённый истории водоснабжения, свойствам воды и экологии.
-            </p>
+      <a href="https://disk.yandex.ru/i/k8zDp8po7lAqsQ"
+         class="presentation-link"
+         target="_blank">
+        Открыть презентацию →
+      </a>
 
-            <a href="https://disk.yandex.ru/i/adMW2j92GISygA" class="presentation-link">
-              Открыть презентацию →
-            </a>
-          </div>
+      <a href="https://disk.yandex.ru/i/ftvtxGXnEdvEoQ"
+         class="presentation-link"
+         target="_blank">
+        Открыть технокарту →
+      </a>
 
-        </div>
+    </div>
+  </div>
 
-      </section>
-    </section>
+  <a href="https://disk.yandex.ru/i/k8zDp8po7lAqsQ"
+     class="material-image forest-material"
+     target="_blank"></a>
+
+</div>
+
+<!-- Вселенная Воды -->
+
+<div class="material-row">
+
+  <a href="https://disk.yandex.ru/i/adMW2j92GISygA"
+     class="material-image ocean-material"
+     target="_blank"></a>
+
+  <div class="material-text">
+    <h3>Музей «Вселенная Воды»</h3>
+
+    <p>
+      Интерактивный музей в Санкт-Петербурге, посвящённый
+      свойствам воды, истории водоснабжения и вопросам экологии.
+    </p>
+
+    <div class="presentation-links">
+
+      <a href="https://disk.yandex.ru/i/adMW2j92GISygA"
+         class="presentation-link"
+         target="_blank">
+        Открыть презентацию →
+      </a>
+
+      <a href="https://disk.yandex.ru/i/9jlatc3zhDJ7hA"
+         class="presentation-link"
+         target="_blank">
+        Открыть технокарту →
+      </a>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Патриаршие палаты -->
+
+<div class="material-row reverse">
+
+  <div class="material-text">
+    <h3>Патриаршие палаты Московского Кремля</h3>
+
+    <p>
+      Патриаршие палаты Московского Кремля когда-то служили местом проживания русских патриархов. В настоящее время в музее можно увидеть старинные предметы быта, церковные реликвии и экспонаты, рассказывающие об истории русской православной церкви.
+    </p>
+
+    <div class="presentation-links">
+
+      <a href="https://disk.yandex.ru/i/H5hApKbx5TOEZw"
+         class="presentation-link"
+         target="_blank">
+        Открыть презентацию →
+      </a>
+
+      <a href="https://disk.yandex.ru/i/bqN9QoCJZcJjpg"
+         class="presentation-link"
+         target="_blank">
+        Открыть технокарту →
+      </a>
+
+    </div>
+  </div>
+
+  <a href="https://disk.yandex.ru/i/H5hApKbx5TOEZw"
+     class="material-image patriarsh-material"
+     target="_blank"></a>
+
+</div>
+
+  </section>
+</section>
+
 
     <section class="screen-section">
       <section class="card gallery-section">
@@ -989,20 +1098,16 @@
     <div class="gallery-image nomad-gallery"></div>
 
     <div class="gallery-content">
-      <div class="gallery-class">2 класс</div>
-
-      <h3>Музей кочевой культуры</h3>
-
+      <div class="gallery-class">1 класс</div>
+    <h3>Музей кочевых культур</h3>
       <p>
         Виртуальная экскурсия, знакомящая учащихся с культурой,
         традициями и образом жизни кочевых народов мира.
       </p>
-
-      <a href="https://disk.yandex.ru/i/yEnSupscXT1C5g"
-         class="presentation-link"
-         target="_blank">
-        Открыть презентацию →
-      </a>
+    <div class="presentation-links"> 
+      <a href="https://disk.yandex.ru/i/yEnSupscXT1C5g" class="presentation-link" target="_blank"> Открыть презентацию → </a> 
+      <a href="https://disk.yandex.ru/i/_OYWV-d1z6u4Gg" class="presentation-link" target="_blank"> Открыть технокарту → </a> 
+    </div>
     </div>
   </div>
 
@@ -1010,7 +1115,7 @@
     <div class="gallery-image medicine-gallery"></div>
 
     <div class="gallery-content">
-      <div class="gallery-class">4 класс</div>
+      <div class="gallery-class">3 класс</div>
 
       <h3>Музей истории медицины имени И.М. Сеченова</h3>
 
@@ -1018,12 +1123,14 @@
         Экскурсия, посвящённая развитию медицины,
         научным открытиям и истории медицинского образования.
       </p>
-
+      <div class="presentation-links">
       <a href="https://disk.yandex.ru/i/59tzDcpuFx6-Eg"
          class="presentation-link"
          target="_blank">
         Открыть презентацию →
       </a>
+      <a href="https://disk.yandex.ru/i/hZ6HnbnaQ50miw" class="presentation-link" target="_blank"> Открыть технокарту → </a>
+      </div>
     </div>
   </div>
 
@@ -1031,7 +1138,7 @@
     <div class="gallery-image war-gallery"></div>
 
     <div class="gallery-content">
-      <div class="gallery-class">3 класс</div>
+      <div class="gallery-class">4 класс</div>
 
       <h3>Музей Отечественной войны 1812 года</h3>
 
@@ -1039,12 +1146,14 @@
         Виртуальное знакомство с историческими событиями,
         героями и памятниками Отечественной войны 1812 года.
       </p>
-
+      <div class="presentation-links">
       <a href="https://disk.yandex.ru/i/phOFu7wh54vE2g"
          class="presentation-link"
          target="_blank">
         Открыть презентацию →
       </a>
+      <a href="https://disk.yandex.ru/i/dWT0SoTJ9Zf0lQ" class="presentation-link" target="_blank"> Открыть технокарту → </a>
+      </div>
     </div>
   </div>
 
@@ -1074,11 +1183,7 @@
         </div>
 
         <p class="final-conclusion">
-            В ходе проведения педагогической практики была осуществлена
-            апробация виртуальных экскурсий.
-            Использование интерактивных и визуальных материалов способствовало
-            повышению учебно-познавательного интереса учащихся,
-            вовлечённости в образовательный процесс и активности на занятиях.
+            В ходе проведения педагогической практики была осуществлена апробация виртуальных экскурсий, направленных на повышение познавательного интереса младших школьников к изучению окружающего мира.
         </p>
       </section>
     </section>
